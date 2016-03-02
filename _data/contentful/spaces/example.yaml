@@ -1,0 +1,17 @@
+---
+product:
+- sys:
+    id: 2MJUOPwXqwcsak2W40CY4w
+  name: Hocho Funayuki
+  onStock: true
+  category: Standard Series
+- sys:
+    id: 3A1h9JUi7SYQqee64q42qg
+  name: kjnasg
+  onStock: false
+  category: Premium Series
+- sys:
+    id: 60CQ8zfAoE428M4GkyqgqW
+  name: 'F 105 '
+  onStock: false
+  category: Standard Series
