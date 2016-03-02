@@ -3,3 +3,8 @@ rvm:
   - 2.1.1
 script:
   - bundle exec jekyll build && bundle exec htmlproof ./_site
+branches:
+  only:
+    - gh-pages
+gemfile:
+	- Gemfile
