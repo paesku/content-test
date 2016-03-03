@@ -21,10 +21,10 @@ build:
   # Read more about steps on our dev center:
   # http://devcenter.wercker.com/docs/steps/index.html
   steps:
-    - bundle-install
+    - bundle install
     - script:
       name: data
       code: bundle exec jekyll contentful --rebuild
     - script:
       name: build
-      code: bundle exec jekyll build 
+      code: bundle exec jekyll build
