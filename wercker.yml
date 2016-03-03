@@ -31,20 +31,13 @@ build:
         name: build
         code: bundle exec jekyll build
 # Deploy!
-deploy :
-  steps :
-    - script:
-        name: Configure git
-        code: |-
-          git config --global user.email "paesku@gmail.com"
-          git config --global user.name "paesku"
+deploy:
+  steps:
+   - install-packages:
+        packages: git ssh-client
+   - leipert/git-push:
+       gh_oauth: $GIT_AUTH
+       repo: git@github.com:paesku/content-test.git
+       branch: gh-pages
+       basedir: public
 
-          # remove current .git folder
-          rm -rf .git
-    - script:
-        name: Deploy to github pages
-        code: |-
-          git init
-          git add .
-          git commit -m "deploy commit from $WERCKER_STARTED_BY"
-          git push -f $GIT_REMOTE master:gh-pages
