@@ -39,4 +39,4 @@ deploy:
       gh_oauth: $GIT_AUTH
       repo: paesku/content-test
       branch: gh-pages
-
+      basedir: _site
