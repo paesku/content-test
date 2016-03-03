@@ -33,7 +33,7 @@ build:
 # Deploy!
 deploy:
   production:
-  - script:
-      name: deploy
-      code: echo production deploy
+    - script:
+        name: deploy
+        code: echo production deploy
 
