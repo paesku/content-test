@@ -32,12 +32,8 @@ build:
         code: bundle exec jekyll build
 # Deploy!
 deploy:
-  steps:
-   - install-packages:
-        packages: git ssh-client
-   - leipert/git-push:
-       gh_oauth: $GIT_AUTH
-       repo: git@github.com:paesku/content-test.git
-       branch: gh-pages
-       basedir: public
+  production:
+  - script:
+      name: deploy
+      code: echo production deploy
 
