@@ -27,12 +27,7 @@ contentful:
   spaces:
     - example: # Jekyll _data folder identifier - Required
         space: vmvsv8r7pecs        # Required
-        access_token: 1d975645823495e535edbc475f4103502adedb74252d8dd6e92c4340ee9efdaf # Required
-        cda_query:                 # Optional
-          include: 2
-          limit: 100
+        access_token: ae90e7119900f1e6d496104a9b0773ed56f4df068684c7da2d3b8ebb297d3cd7 # Required
         content_types:             # Optional
           cat: Product
-        client_options:            # Optional
-          api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
        # base_path: app_path        # Optional - Defaults to Current directory
